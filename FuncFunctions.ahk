@@ -18,7 +18,8 @@ DefaultBrowser() {
 	Return BrowserPathandEXE
 }
 
-DetectContextMenu() { ; based on closeContextMenu() by Stefaan - http://www.autohotkey.com/community/viewtopic.php?p=163183#p163183 
+DetectContextMenu() {
+   ; based on closeContextMenu() by Stefaan - http://www.autohotkey.com/community/viewtopic.php?p=163183#p163183 
    GuiThreadInfoSize = 48
    VarSetCapacity(GuiThreadInfo, 48)
    NumPut(GuiThreadInfoSize, GuiThreadInfo, 0)
