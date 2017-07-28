@@ -80,3 +80,9 @@ Keyboard Hotkey: Alt
 Should show a ListView of existing windows in the center of the screen, the top window should be the last activated window besides the current active window, and selected by default. The second listing should be the active window, and from then on windows should be listed alphabetically. 
 Mouse interaction: Scroll wheel moves listview selection up/dn, LeftMouseButton (single-click) hides the UI and that window is activated. Right click hides the UI at any time and no window switch is performed.
 Keybourd interaction: Up/down arrow keys moves the listview selection up/dn, Tab key moves the listview selecton down, Shift+Tab moves the listview selection up. Enter key or Space key hides the UI and that window is activated. Esc key hides the UI at any time and no window switch is performed.
+
+Known bugs/issues:
+* **AutomaticWindowManager.ahk:**
+   * Does not remember maximized windows
+   * Rarely increases size of dialog windows
+   * Small delay before moving window to last known position
