@@ -65,9 +65,9 @@ Return
 ~LShift Up::
 if (A_PriorKey = "LShift") and (TimeNow > 0) and (A_TickCount - TimeNow < 250) {
 	If (DetectContextMenu() = 1) OR (WinExist("ahk_class Chrome_WidgetWin_2") AND WinActive("ahk_exe chrome.exe"))
-	Send {LAlt}
+		Send {LAlt}
 	Else
-	Send {AppsKey} ; Context menu
+		Send {AppsKey} ; Context menu
 }
 Triggered := 0
 Return
@@ -85,32 +85,31 @@ TimeNow := 0
 Return
 
 #If (DetectContextMenu() = 1) OR (WinExist("ahk_class Chrome_WidgetWin_2") AND WinActive("ahk_exe chrome.exe"))
-
+	
 WheelUp::
-    Send, {Up}
-	SelectMode := 1
-	SetTimer, SelectModeTimer, -15
-    Return
+Send, {Up}
+SelectMode := 1
+SetTimer, SelectModeTimer, -15
+Return
 
 WheelDown::
-    Send, {Down}
-	SelectMode := 1
-	SetTimer, SelectModeTimer, -15
-    Return
-	
+Send, {Down}
+SelectMode := 1
+SetTimer, SelectModeTimer, -15
+Return
+
 $LButton::
-	If (SelectMode = 1)
+If (SelectMode = 1)
 	Send, {Enter}
-	Else
+Else
 	Send, {LButton}
-	Return
-	
+Return
+
 $RButton::
-	If (SelectMode = 1)
+If (SelectMode = 1)
 	Send, {Esc}
-	Else
+Else
 	Send, {RButton}
-	Return
+Return
 
 #If
-   
