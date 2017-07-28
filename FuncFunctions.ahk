@@ -15,7 +15,7 @@ DefaultBrowser() {
 	
 	; Extract and return the path and executable of the browser
 	StringMid, BrowserPathandEXE, BrowserFullCommand, 2, %pos%
-	Return BrowserPathandEXE
+	Return BrowserPathandEXE 
 }
 
 DetectContextMenu() {
@@ -33,5 +33,5 @@ DetectContextMenu() {
 	if (NumGet(GuiThreadInfo, 4) & 0x4)
 		Return 1 ; we've found a context menu
 	Else
-		Return 0
+		Return 0 
 }
