@@ -83,6 +83,5 @@ Keybourd interaction: Up/down arrow keys moves the listview selection up/dn, Tab
 
 Known bugs/issues:
 * **AutomaticWindowManager.ahk:**
-   * Does not remember maximized windows
    * Rarely increases size of dialog windows
    * Small delay before moving window to last known position
