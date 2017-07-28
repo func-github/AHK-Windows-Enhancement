@@ -1,4 +1,5 @@
-DefaultBrowser() {
+DefaultBrowser() 
+{
 	; Find the Registry key name for the default browser
 	RegRead, BrowserKeyName, HKEY_CURRENT_USER, Software\Microsoft\Windows\CurrentVersion\Explorer\FileExts\.html\UserChoice, Progid
 
