@@ -3,9 +3,9 @@ AutoHotKey scripts to improve windows, the windows explorer, and the windows tas
 
 Current functionality:
 * **Hotkeys.ahk:**
-  * Quickly pressing and releasing the LeftWin key brings up a new explorer window to its default starting location (such as Quick Access), the script changes the view in the explorer window to "Detail" view, and puts the keyboard focus on the search-bar.
-  * Quickly pressing and releasing the LeftCtrl key brings up a new browser window using your default browser at your default browser start page.
-  * Quickly pressing and releasing the LeftShift key brings up a the context menu for the active window. Pressing the LeftShift key again will close the context menu.
+  * Quickly pressing and releasing the LeftWin key (must not be a longer than 250 ms press) brings up a new explorer window to its default starting location (such as Quick Access), the script changes the view in the explorer window to "Detail" view, and puts the keyboard focus on the search-bar.
+  * Quickly pressing and releasing the LeftCtrl key (must not be a longer than 250 ms press) brings up a new browser window using your default browser at your default browser start page.
+  * Quickly pressing and releasing the LeftShift key (must not be a longer than 250 ms press) brings up a the context menu for the active window. Pressing the LeftShift key again will close the context menu.
   * When a context menu is detected, you can use your mouse wheel to go up and down the menu items, as if you were using the up/down arrow keys. When you do this, the left mouse button will then function as an enter key, and the right mouse button will function as an escape key, allowing you to choose menu items, enter a nested menu item, or close a nested menu item, or close the parent menu itself. This allows you to navigate context menus by using the mouse wheel and mouse buttons without the need to move the mouse at all. However, if you don't use the mouse wheel when a context menu opens, you can still left click outside the menu to close it.
 
 * **AutomaticWindowManager.ahk:**
