@@ -3,6 +3,7 @@ AutoHotKey scripts to improve windows, the windows explorer, and the windows tas
 
 Current functionality:
 * **Hotkeys.ahk:**
+  * Measures were taken to prevent the single-modifier-key-press hotkeys from misfiring. If the press is too long, or if keyboard activity or mouse button/wheel/pad activity happens during the key press, the script will not do anything put pass the key to the system as normal.
   * Quickly pressing and releasing the LeftWin key (must not be a longer than 250 ms press) brings up a new explorer window to its default starting location (such as Quick Access), the script changes the view in the explorer window to "Detail" view, and puts the keyboard focus on the search-bar.
   * Quickly pressing and releasing the LeftCtrl key (must not be a longer than 250 ms press) brings up a new browser window using your default browser at your default browser start page.
   * Quickly pressing and releasing the LeftShift key (must not be a longer than 250 ms press) brings up a the context menu for the active window. Pressing the LeftShift key again will close the context menu.
