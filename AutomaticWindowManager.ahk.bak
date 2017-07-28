@@ -8,7 +8,7 @@ SetWinDelay, 50
 Process, Priority, , Normal
 DetectHiddenWindows, Off
 
-#Include *i %A_ScriptDir%\Includes\StartUp.ahk
+#Include *i StartUp.ahk
    
 MatchList := ""
 

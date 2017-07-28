@@ -4,8 +4,8 @@
 #InstallKeybdHook
 #InstallMouseHook
 
-#Include *i %A_ScriptDir%\Includes\StartUp.ahk
-#Include %A_ScriptDir%\Includes\FuncFunctions.ahk
+#Include *i StartUp.ahk
+#Include FuncFunctions.ahk
 
 Return
 
