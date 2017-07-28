@@ -19,7 +19,7 @@ Current functionality:
     * When #Included in another script, this will ask the user if they want to add the script they are opening to the windows start up, so they don't have to manually run the script after each system reboot. 
 
 
-Wish-list:
+To-do:
 * **Windows Explorer:** Add 'Copy to folder..' and 'Move to folder..' options to the context menu of windows explorer, which each call a respective AHK script. The AHK script should show a filesave/fileopen style dialog allowing the user to navigate to a target folder, then once a target path is specified, the AHK script will either cut the active selection in windows explorer in the case of 'move to folder' and then navigate to the saved target path, paste, then navigate back to the original location in windows explorer. In the case of 'Copy to folder..', the AHK script should merely copy the selection not cut it, and repeat the steps above.** I'm aware that there exists a registry hack to implement something similar to this, but not only does it cause bugs such as the dialog popping up when you double click an outlook attachment, it also uses an inferior dialog compared to the fileopen or filesave type dialogs.**
 
 
