@@ -1,5 +1,4 @@
-DefaultBrowser() 
-{
+DefaultBrowser() {
 	; Find the Registry key name for the default browser
 	RegRead, BrowserKeyName, HKEY_CURRENT_USER, Software\Microsoft\Windows\CurrentVersion\Explorer\FileExts\.html\UserChoice, Progid
 
@@ -19,8 +18,7 @@ DefaultBrowser()
 	Return BrowserPathandEXE
 }
 
-DetectContextMenu() ; based on closeContextMenu() by Stefaan - http://www.autohotkey.com/community/viewtopic.php?p=163183#p163183 
-{
+DetectContextMenu() { ; based on closeContextMenu() by Stefaan - http://www.autohotkey.com/community/viewtopic.php?p=163183#p163183 
    GuiThreadInfoSize = 48
    VarSetCapacity(GuiThreadInfo, 48)
    NumPut(GuiThreadInfoSize, GuiThreadInfo, 0)
