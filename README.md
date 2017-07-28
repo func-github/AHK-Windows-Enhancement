@@ -2,6 +2,9 @@
 AutoHotKey scripts to improve windows, the windows explorer, and the windows task switcher for windows 10.
 
 Current functionality:
+* **AutomaticWindowManager.ahk:**
+    * Automatically remembers the last window position for snapped windows, even after a restart, based on the process name.
+
 * **Hotkeys.ahk:**
   * Single-modifier-key-press hotkeys are used to prevent users from having to memorize hotkey combinations. Measures were taken to prevent the single-modifier-key-press hotkeys from misfiring. If the press is too long, or if keyboard activity or mouse button/wheel/pad activity happens during the key press, the script will not do anything put pass the key to the system as normal.
   * Quickly pressing and releasing the LeftWin key (must not be a longer than 250 ms press) brings up a new explorer window to its default starting location (such as Quick Access), the script changes the view in the explorer window to "Detail" view, and puts the keyboard focus on the search-bar. Together with an indexed drive, this is used to search the local filesystem; it is intended to do the same thing as Everything by VoidTools, except with the ability to move/copy files, preview files, use the navigation sidebar, and all of the other features of Explorer.
@@ -9,10 +12,7 @@ Current functionality:
   * Quickly pressing and releasing the LeftShift key (must not be a longer than 250 ms press) brings up a the context menu for the active window. Pressing the LeftShift key again will close the context menu. This allows a user to do things in Explorer such as cut/copy files without having to memorize hotkey combinations and without using the mouse. Simply press LeftShift, then use the arrow keys to navigate the menu, finally use the enter key to make a selection. 
   * When a context menu is open, this script detects it and allows you to use your mouse wheel to go up and down the menu items, as if you were using the up/down arrow keys. After using the scroll wheel on a menu the left mouse button will then function as an enter key, and the right mouse button will function as an escape key, allowing you to choose menu items, enter a nested menu item, or close a nested menu item, or close the parent menu itself. This allows you to navigate context menus by using the mouse wheel and mouse buttons without the need to move the mouse at all. However, if you don't use the mouse wheel when a context menu opens, you can still left click outside the menu to close it.
 
-* **AutomaticWindowManager.ahk:**
-    * Automatically remembers the last window position for snapped windows, even after a restart, based on the process name.
-
-* **Functions.ahk:**
+* **FuncFunctions.ahk:**
     * All functions are kept in this file so they can be #Included across all other script files without having to redefine functions in each script.
 
 * **StartUp.ahk:**
