@@ -1,7 +1,24 @@
 # AHK-Windows-Enhancement
-AutoHotKey scripts to improve windows, the windows explorer, and the windows task switcher.
+AutoHotKey scripts to improve windows, the windows explorer, and the windows task switcher for windows 10.
 
-Work in progress:
+Current functionality:
+* **Hotkeys.ahk:**
+  * Quickly pressing and releasing the LeftWin key brings up a new explorer window to its default starting location (such as Quick Access), the script changes the view in the explorer window to "Detail" view, and puts the keyboard focus on the search-bar.
+  * Quickly pressing and releasing the LeftCtrl key brings up a new browser window using your default browser at your default browser start page.
+  * Quickly pressing and releasing the LeftShift key brings up a the context menu for the active window. Pressing the LeftShift key again will close the context menu.
+  * When a context menu is detected, you can use your mouse wheel to go up and down the menu items, as if you were using the up/down arrow keys. When you do this, the left mouse button will then function as an enter key, and the right mouse button will function as an escape key, allowing you to choose menu items, enter a nested menu item, or close a nested menu item, or close the parent menu itself. This allows you to navigate context menus by using the mouse wheel and mouse buttons without the need to move the mouse at all. However, if you don't use the mouse wheel when a context menu opens, you can still left click outside the menu to close it.
+
+* **AutomaticWindowManager.ahk:**
+    * Automatically remembers the last window position for snapped windows, even after a restart, based on the process name.
+
+* **Functions.ahk:**
+    * All functions are kept in this file so they can be #Included across all other script files without having to redefine functions in each script.
+
+* **StartUp.ahk:**
+    * When #Included in another script, this will ask the user if they want to add the script they are opening to the windows start up, so they don't have to manually run the script after each system reboot. 
+
+
+Wish-list:
 * **Windows Explorer:** Add 'Copy to folder..' and 'Move to folder..' options to the context menu of windows explorer, which each call a respective AHK script. The AHK script should show a filesave/fileopen style dialog allowing the user to navigate to a target folder, then once a target path is specified, the AHK script will either cut the active selection in windows explorer in the case of 'move to folder' and then navigate to the saved target path, paste, then navigate back to the original location in windows explorer. In the case of 'Copy to folder..', the AHK script should merely copy the selection not cut it, and repeat the steps above.** I'm aware that there exists a registry hack to implement something similar to this, but not only does it cause bugs such as the dialog popping up when you double click an outlook attachment, it also uses an inferior dialog compared to the fileopen or filesave type dialogs.**
 
 
